@@ -9,7 +9,7 @@ use Auth;
 use Carbon\Carbon;
 use DB;
 use stdClass;
-date_default_timezone_set("Asia/Jakarta");
+date_default_timezone_set("Asia/Kuala_lumpur");
 
 class PresensiController extends Controller
 {
@@ -55,7 +55,9 @@ class PresensiController extends Controller
                 'latitude' => $request->latitude,
                 'longitude' => $request->longitude,
                 'tanggal' => date('Y-m-d'),
-                'masuk' => date('H:i:s')
+                'masuk' => date('H:i:s'),
+                'pulang' => null, // Atau Anda bisa mengisi dengan nilai default jika ada
+        
             ]);
         } else {
             $data = [

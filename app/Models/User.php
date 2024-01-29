@@ -10,6 +10,10 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+    public function latestLocation()
+    {
+        return $this->hasOne(UserLocation::class)->latest();
+    }
     use HasApiTokens, HasFactory, Notifiable;
 
     /**

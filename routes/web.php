@@ -23,3 +23,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
 Route::get('/create-user', [App\Http\Controllers\UserController::class, 'create'])->name('user');
 Route::post('/store-user', [App\Http\Controllers\UserController::class, 'store'])->name('user-store');
+Route::get('/jobs', [App\Http\Controllers\JobController::class, 'index']);
+Route::get('/user-location-map', [App\Http\Controllers\UserLocationMapController::class, 'showMap']);

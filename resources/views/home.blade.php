@@ -5,8 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">Rekap Presensi</div>
-                
+                <div class="card-header">Rekod Kedatangan</div>
                 <div class="card-body">
                 <table id="example" class="table table-striped" style="width:100%">
                     <thead>
